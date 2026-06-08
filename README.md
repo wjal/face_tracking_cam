@@ -45,7 +45,7 @@ A real-time, closed-loop face-tracking system that uses computer vision to detec
                                                           └──────────────────────────────────┘
 ```
 
-The system forms a continuous closed-loop: the camera sees the face, the Pi computes the error from center, the Arduino corrects the servo angles, and the gimbal repositions the camera — repeat.
+The system forms a continuous closed-loop: the camera sees the face, the Pi computes the error from center, the Arduino corrects the servo angles, and the gimbal repositions the camera. Repeat.
 
 ---
 
@@ -186,7 +186,7 @@ The proportional gain (`12`) and dead zone (`35 px`) are empirically tuned const
 face_tracking/
 ├── hardware/
 │   ├── CAM_SERVOS.stl                           # 3D-printable pan/tilt gimbal arm
-│   └── level_converter.[ext]                    # 2N7000 logic-level converter schematic (TBD)
+│   └── level_converter (TODO)                   # 2N7000 logic-level converter schematic (TBD)
 ├── arduino/
 │   └── src/
 │       └── main.cpp                             # Arduino: UART RX, proportional servo control
